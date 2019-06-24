@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that kills the process 7-highlander.
+# Using the –9 signal (SIGKILL) with the pkill command ensures that the process terminates promptly.
+# When no signal is included in the pkill command-line syntax, the default signal that is used is –15 (SIGTERM).
+# However, the –9 signal should not be used to kill certain processes, such as a database process, or an LDAP server process.
+# The result is that data might be lost.
+# Syntax: $ pkill [signal] process
+
+pkill -9 -f ./7-highlander
