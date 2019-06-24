@@ -4,4 +4,4 @@
 # u : Select all processes on a terminal, including those of other users
 # x : Select processes without controlling ttys
 
-ps -aux
+ps -auxf
