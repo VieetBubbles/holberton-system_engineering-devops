@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# How to Install nginx web server
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+service nginx restart
+
+server {
+       listen 80;
+       server_name domain1.com;
+       return 301 $scheme://domain2.com$request_uri;
+}
+
