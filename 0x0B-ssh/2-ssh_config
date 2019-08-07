@@ -52,6 +52,6 @@ Host *
     HashKnownHosts yes
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials no
-    HostName 34.73.218.30
+    HostName 34.73.32.179
     User ubuntu
     IdentityFile ~/.ssh/holberton
