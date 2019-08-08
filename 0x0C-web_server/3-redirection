@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# How to Install nginx web server
+# How to Configure your Nginx server so that /redirect_me is redirecting to another page.
 apt-get update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
