@@ -1,10 +1,12 @@
 # Client configuration file (w/ Puppet)
 file_line { 'AddHug':
+  ensure => 'present',
   path => '/etc/ssh/ssh_config',
-  line => HostName 34.73.32.179
+  line => 'PasswordAuthentication no',
 }
 
 file_line { 'AddBug':
+  ensure => 'present'
   path => '/etc/ssh/ssh_config',
-  line => User ubuntu
+  line => 'IdentityFile ~/.ssh/holberton',
 }
