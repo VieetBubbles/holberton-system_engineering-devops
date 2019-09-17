@@ -24,8 +24,7 @@ if __name__ == "__main__":
             list_of_csv_values.append(["{}".format(id),
                                        "{}".format(get_Name),
                                        "{}".format(d.get("completed")),
-                                       "{}".format(d.get("title"))
-                                   ])
+                                       "{}".format(d.get("title"))])
 
     # Save dictionary values into a csv file
     with open("{}.csv".format(id), "w") as csvfile:
