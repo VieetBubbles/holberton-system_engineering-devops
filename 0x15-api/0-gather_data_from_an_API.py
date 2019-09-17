@@ -4,7 +4,6 @@ from sys import argv
 
 
 if __name__ == "__main__":
-
     list_of_completed_tasks = []
     number_of_tasks = 0
     number_finished = 0
@@ -25,9 +24,9 @@ if __name__ == "__main__":
             number_finished += 1
             number_of_tasks += 1
             list_of_completed_tasks.append(dic.get("title"))
-        elif dic.get("userId") == int(argv[1]):
+        elif dic.get("userId") == int(id):
             number_of_tasks += 1
-    print("Employee {} is done with task ({}/{}):"
+    print("Employee {} is done with tasks ({}/{}):"
           .format(get_Name, number_finished, number_of_tasks))
     for task in list_of_completed_tasks:
         print("\t {}".format(task))
