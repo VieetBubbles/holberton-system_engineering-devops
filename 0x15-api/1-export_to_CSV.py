@@ -28,5 +28,5 @@ if __name__ == "__main__":
 
     # Save dictionary values into a csv file
     with open("{}.csv".format(id), "w") as csvfile:
-        fileWrite = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-        fileWrite.writerows(list_of_csv_values)
+        spamwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
+        spamwriter.writerows(list_of_csv_values)
