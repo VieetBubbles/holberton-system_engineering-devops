@@ -21,4 +21,4 @@ def top_ten(subreddit):
         list_sorted_by_hot = data_dictionary.get('children')
         for time in list_sorted_by_hot:
             data_dict_inside = time.get('data')
-            print(data_dict_inside.get('titles'))
+            print(data_dict_inside.get('title'))
